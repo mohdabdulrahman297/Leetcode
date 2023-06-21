@@ -1,19 +1,22 @@
+##optimized approach
+##time:o(1)
+##space:o(n)
 class Solution:
-    def containsDuplicate(self, nums: List[int]) -> bool:
-        nums.sort();
-        for i in range(len(nums)-1):
-            if(nums[i] == nums[i+1]):
-                return True;
-        
+    def containsDuplicate(self, nums):
+        s = set()
+        for num in nums:
+            if num in s:
+                return True
+            s.add(num)
         return False
-    
-    
-# Uncomment the code below to test the solution
 
-# n = int(input("Enter the number of elements: "))
+
+
+
+# n = int(input("Enter the size of the array: "))
 # nums = []
-# print("Enter the elements: ")
-# for i in range(n):
+# print("Enter elements:")
+# for _ in range(n):
 #     nums.append(int(input()))
 
 # solution = Solution()
@@ -23,5 +26,3 @@ class Solution:
 #     print("true")
 # else:
 #     print("false")
-    
-        
