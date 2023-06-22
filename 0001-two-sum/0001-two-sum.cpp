@@ -21,3 +21,18 @@ public:
         
     }
 };
+
+/*
+int main()
+{
+
+vector<int> nums = {2,7,5,11};
+int target = 9;
+Solution solution;
+vector<int> result = solution.twoSum(nums,target);
+for(int i: result):
+cout<<i<<endl;
+cout<<endl;
+return 0;
+}
+*/
