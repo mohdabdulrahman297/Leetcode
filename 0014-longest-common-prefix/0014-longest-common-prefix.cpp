@@ -1,3 +1,6 @@
+//time:o(n*mlog(n))
+//space:o(m)
+// where n is no of strings and m is length of strings
 class Solution {
 public:
     string longestCommonPrefix(vector<string>& v) {
