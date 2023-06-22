@@ -1,3 +1,6 @@
+#time:o(n*mlog(n))
+#space:o(m)
+# where n is no of strings and m is length of strings
 class Solution:
     def longestCommonPrefix(self, v: List[str]) -> str:
         
@@ -12,3 +15,8 @@ class Solution:
             result+=first[i]
         return result
         
+        
+##v = ["flower", "flow", "flight"]
+##s = Solution()
+##longestPrefix = s.longestCommonPrefix(v)
+##print("Longest common prefix:", longestPrefix)##        
