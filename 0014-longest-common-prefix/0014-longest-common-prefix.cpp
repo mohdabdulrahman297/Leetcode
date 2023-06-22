@@ -23,6 +23,16 @@ public:
     }
 };
 
+/*
+int main() {
+    vector<string> v = {"flower", "flow", "flight"};
+    Solution s;
+    string longestPrefix = s.longestCommonPrefix(v);
+    cout << "Longest common prefix: " << longestPrefix << endl;
+    return 0;
+}
+*/
+
 
 
 
