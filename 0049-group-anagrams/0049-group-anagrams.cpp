@@ -39,3 +39,21 @@ private:
     
     
 };
+
+/*
+int main()
+{
+Solution solution;
+vector<string> strs = ["eat","tea","tan","ate","nat","bat"];
+
+vector<vector<string>> result = solution.groupAnagrams(strs);
+
+for(const auto&group : result){
+for(const string&str : group){
+cout<<str<<" ";
+}
+cout<<endl;
+}
+return 0;
+}
+*/
