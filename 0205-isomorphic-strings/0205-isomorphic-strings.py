@@ -16,3 +16,15 @@ class Solution:
             mapTS[c2] = c1
             
         return True  # If all characters are validly mapped, return True
+    
+    
+# Create an instance of the Solution class
+#solution = Solution()
+
+# Input strings
+#s = "egg"
+#t = "add"
+
+# Call the isIsomorphic method and print the result
+#print(solution.isIsomorphic(s, t))  # Output: True
+    
