@@ -17,4 +17,18 @@ class Solution:
             result.append(row)
             
         return result   
+    
+# Create an instance of the Solution class
+##solution = Solution()
+
+# Define the number of rows
+##numRows = 5
+
+# Call the generate() function and store the result
+##result = solution.generate(numRows)
+
+# Print the generated Pascal's Triangle
+##for row in result:
+##    print(row)
+    
         
