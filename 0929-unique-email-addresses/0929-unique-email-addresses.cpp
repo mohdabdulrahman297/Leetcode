@@ -18,3 +18,26 @@ public:
         
     }
 };
+
+/*
+int main() {
+    Solution solution;
+    
+    vector<string> emails = {
+        "alice@example.com",
+        "bob@example.com",
+        "charlie@example.com"
+    };
+    
+    int uniqueEmails = solution.numUniqueEmails(emails);
+    
+    cout << "Number of unique emails: " << uniqueEmails << endl;
+    
+    return 0;
+}
+This code creates an instance of the Solution class, initializes a vector of email addresses, calls the numUniqueEmails function, and prints the number of unique emails found.
+
+
+*/
+
+
