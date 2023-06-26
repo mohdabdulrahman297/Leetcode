@@ -13,4 +13,11 @@ class Solution:
             unique.add((local,domain))
             
         return len(unique)     
+    
+    
+##emails = ["test.email+foo@example.com", ##"test.email.bar@example.com", "test.email@example.com"]
+##solution = Solution()
+##result = solution.numUniqueEmails(emails)
+##print(result)
+
         
