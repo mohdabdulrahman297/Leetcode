@@ -21,3 +21,25 @@ public:
         
     }
 };
+
+/*int main() {
+    Solution solution;
+
+    // Test case 1
+    string s1 = "egg";
+    string t1 = "add";
+    cout << solution.isIsomorphic(s1, t1) << endl; // Output: true
+
+    // Test case 2
+    string s2 = "foo";
+    string t2 = "bar";
+    cout << solution.isIsomorphic(s2, t2) << endl; // Output: false
+
+    // Test case 3
+    string s3 = "paper";
+    string t3 = "title";
+    cout << solution.isIsomorphic(s3, t3) << endl; // Output: true
+
+    return 0;
+}
+*/
