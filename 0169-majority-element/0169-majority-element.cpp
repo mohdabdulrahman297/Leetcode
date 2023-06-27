@@ -1,3 +1,5 @@
+// time: o(n)
+//space : o(1)
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
