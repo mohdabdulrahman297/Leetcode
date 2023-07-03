@@ -1,33 +1,41 @@
-#time: o(n+m)
-#space: o(n+m)
-class Solution:
-    def nextGreaterElement(self, nums1: List[int], nums2: List[int]) -> List[int]:
-        # Creating a map nums1Idx and mapping values to their indices
-        nums1Idx = {}
-        for i, n in enumerate(nums1):
-            nums1Idx[n] = i
+// time: o(n+m)
+//space : o(n+m)
+class Solution {
+public:
+    vector<int> nextGreaterElement(vector<int>& nums1, vector<int>& nums2) {
+        // Creating a map nums1Idx and mapping values to their indices
+        unordered_map<int, int> nums1Idx;
+        for (int i = 0; i < nums1.size(); i++) {
+            nums1Idx[nums1[i]] = i;
+        }
 
-        # Create a result vector of size nums1 to store the output
-        res = [-1] * len(nums1)
+        // Create a result vector of size nums1 to store the output
+        vector<int> res(nums1.size(), -1);
         
-        # Create an empty stack
-        stack = []
+        // Create an empty stack
+        stack<int> st;
         
-        for i in range(len(nums2)):
-            curr = nums2[i]
+        for (int i = 0; i < nums2.size(); i++) {
+            int curr = nums2[i];
             
-            # Check if stack is not empty and curr is greater than the top element of the stack
-            while stack and curr > stack[-1]:
-                val = stack.pop()
+            // Check if stack is not empty and curr is greater than the top element of the stack
+            while (!st.empty() && curr > st.top()) {
+                int val = st.top();
+                st.pop();
                 
-                # Find the index of the value through the map
-                idx = nums1Idx[val]
+                // Find the index of the value through the map
+                int idx = nums1Idx[val];
                 
-                # Store the next greater element, i.e., curr, at the index correlated to nums1
-                res[idx] = curr
+                // Store the next greater element, i.e., curr, at the index correlated to nums1
+                res[idx] = curr;
+            }
             
-            # Check if curr (next greater element) exists in nums1 and add it to the stack
-            if curr in nums1:
-                stack.append(curr)
+            // Check if curr (next greater element) exists in nums1 and add it to the stack
+            if (nums1Idx.find(curr) != nums1Idx.end()) {
+                st.push(curr);
+            }
+        }
         
-        return res
+        return res;
+    }
+};
