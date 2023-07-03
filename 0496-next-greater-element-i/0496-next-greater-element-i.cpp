@@ -40,3 +40,17 @@ public:
     }
 };
 
+/*
+int main() {
+    Solution solution;
+
+    // Example 1
+    vector<int> nums1 = {4, 1, 2};
+    vector<int> nums2 = {1, 3, 4, 2};
+    vector<int> output = solution.nextGreaterElement(nums1, nums2);
+    for (int num : output) {
+        cout << num << " ";
+    }
+    cout << endl;  // Output: -1 3 -1
+*/
+
