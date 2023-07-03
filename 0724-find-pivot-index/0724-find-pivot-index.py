@@ -1,3 +1,5 @@
+##time : o(n)
+## space : o(1)
 class Solution:
     def pivotIndex(self, nums: List[int]) -> int:
         
@@ -12,4 +14,11 @@ class Solution:
                 return i
             leftsum += nums[i]
         return -1    
-        
+##solution = Solution()
+
+# Example 1
+##nums = [1, 7, 3, 6, 5, 6]
+##output = solution.pivotIndex(nums)
+##print(output)  # Output: 3
+
+##        
