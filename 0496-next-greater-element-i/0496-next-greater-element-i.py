@@ -3,8 +3,10 @@
 class Solution:
     def nextGreaterElement(self, nums1: List[int], nums2: List[int]) -> List[int]:
         # Creating a map nums1Idx and mapping values to their indices
-        nums1Idx = {n: i for i, n in enumerate(nums1)}
-        
+        nums1Idx = {}
+        for i, n in enumerate(nums1):
+            nums1Idx[n] = i
+
         # Create a result vector of size nums1 to store the output
         res = [-1] * len(nums1)
         
