@@ -18,6 +18,30 @@ class NumArray:
             leftsum = self.prefix[left-1]
             
         return rightsum - leftsum
+    
+    
+# Example usage
+#ums = [-2, 0, 3, -5, 2, -1]
+
+# Create an instance of NumArray
+#bj = NumArray(nums)
+
+# Calculate and print the sum of a range
+#eft = 0
+#ight = 2
+#aram_1 = obj.sumRange(left, right)
+#rint(param_1)  # Output: 1
+
+#eft = 2
+#ight = 5
+#aram_2 = obj.sumRange(left, right)
+#rint(param_2)  # Output: -1
+
+#eft = 0
+#ight = 5
+#aram_3 = obj.sumRange(left, right)
+#rint(param_3)  # Output: -3
+#   
                                   
                                   
         
