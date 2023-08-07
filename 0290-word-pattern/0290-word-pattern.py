@@ -1,3 +1,5 @@
+## time: o(n+m)
+## space: o(n+m)
 class Solution:
     def wordPattern(self, pattern: str, s: str) -> bool:
         
