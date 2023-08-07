@@ -1,58 +1,40 @@
-## linked list class
-class ListNode:
-    def __init__(self,key):
-        self.key = key
-        self.next = None
-class MyHashSet:
+class MyHashSet {
+public:
+    bool set[1000001];
+    MyHashSet() {
+        for (int i = 0; i < 1000001; i++) {
+            set[i] = false;
+        }
+    }
+    
+    void add(int key) {
+        set[key] = true;
+    }
+    
+    void remove(int key) {
+        set[key] = false;
+    }
+    
+    bool contains(int key) {
+        return set[key];
+    }
+};
 
-    def __init__(self):
-        ## create a array of linkedlist node of size 10000
-        self.set = [ListNode(0) for i in range(10**4)]
-        
-        
+/*
+int main() {
+    MyHashSet obj;
 
-    def add(self, key: int) -> None:
-        ## this gives us the index
-        curr = self.set[key% len(self.set)]
-        ## iterate till next element of node is non zero
-        
-        while curr.next:
-            ## check for duplicate key
-            if curr.next.key == key:
-                return
-            curr = curr.next
-        curr.next = ListNode(key)    
-        
+    obj.add(1);
+    obj.add(2);
+    obj.add(3);
 
-    def remove(self, key: int) -> None:
-        ## this gives us the index
-        curr = self.set[key% len(self.set)]
-        ## iterate till next element of node is non zero
-        
-        while curr.next:
-            ## check for duplicate key
-            if curr.next.key == key:
-                curr.next = curr.next.next
-                return
-            curr = curr.next  
-        
+    std::cout << "Contains 2: " << obj.contains(2) << std::endl; // Output: Contains 2: 1 (true)
+    std::cout << "Contains 4: " << obj.contains(4) << std::endl; // Output: Contains 4: 0 (false)
 
-    def contains(self, key: int) -> bool:
-        ## this gives us the index
-        curr = self.set[key% len(self.set)]
-        ## iterate till next element of node is non zero
-        
-        while curr.next:
-            ## check for duplicate key
-            if curr.next.key == key:
-                return True
-            curr = curr.next
-        return False  
-        
+    obj.remove(2);
+    
+    std::cout << "Contains 2: " << obj.contains(2) << std::endl; // Output: Contains 2: 0 (false)
 
-
-# Your MyHashSet object will be instantiated and called as such:
-# obj = MyHashSet()
-# obj.add(key)
-# obj.remove(key)
-# param_3 = obj.contains(key)
+    return 0;
+}
+*/
