@@ -49,3 +49,18 @@ public:
         
     }
 };
+
+/*
+int main() {
+    Solution solution;
+
+    std::vector<int> input_array = {38, 27, 43, 3, 9, 82, 10};
+    std::vector<int> sorted_array = solution.sortArray(input_array);
+
+    for (int num : sorted_array) {
+        std::cout << num << " ";
+    }
+
+    return 0;
+}
+*/
