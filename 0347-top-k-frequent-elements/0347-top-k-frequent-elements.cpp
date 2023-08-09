@@ -31,3 +31,24 @@ public:
         
     }
 };
+
+/*
+int main() {
+    // Example input
+    std::vector<int> nums = {1, 1, 1, 2, 2, 3};
+    int k = 2;
+
+    // Create an instance of the Solution class
+    Solution solution;
+
+    // Call the topKFrequent method to find the top k frequent elements
+    std::vector<int> top_k_frequent = solution.topKFrequent(nums, k);
+
+    // Print the result
+    for (int num : top_k_frequent) {
+        std::cout << num << " ";
+    }
+
+    return 0;
+}
+*/
