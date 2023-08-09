@@ -52,7 +52,19 @@ class Solution:
         MergeSort(nums , 0 , len(nums)-1)
         return nums
             
-            
+
+        
+# Create an instance of the Solution class
+#solution = Solution()
+
+# Example input array
+#input_array = [38, 27, 43, 3, 9, 82, 10]
+
+# Call the sortArray method to sort the input array
+#sorted_array = solution.sortArray(input_array)
+
+# Print the sorted array
+#print(sorted_array)        
             
             
             
