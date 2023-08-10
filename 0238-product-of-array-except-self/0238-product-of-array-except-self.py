@@ -18,3 +18,9 @@ class Solution:
             
         return res    
         
+        
+# Example usage
+#nums = [1, 2, 3, 4]
+#solution = Solution()
+#result = solution.productExceptSelf(nums)
+#print(result)  # Output: [24, 12, 8, 6]#        
