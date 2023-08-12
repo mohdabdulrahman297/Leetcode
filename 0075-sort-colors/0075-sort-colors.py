@@ -30,3 +30,11 @@ class Solution:
                 
             else:
                 i += 1  ## Increment i if the element is 1
+                
+                
+# Example input
+#nums = [2, 0, 2, 1, 1, 0]
+
+#solution = Solution()
+#solution.sortColors(nums)
+#print("Sorted Colors:", nums)#                
