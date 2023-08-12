@@ -16,4 +16,10 @@ class Solution:
                 longest  = max(length , longest)
                 
         return longest      
-        
+     
+# Example input
+#nums = [100, 4, 200, 1, 3, 2]
+
+#solution = Solution()
+#result = solution.longestConsecutive(nums)
+#print(f"Input: {nums}, Longest Consecutive Length: {result}")#        
