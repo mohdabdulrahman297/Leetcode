@@ -26,5 +26,28 @@ class Solution:
               
                         
                         
-        return True             
+        return True       
+    
+# Sample input Sudoku board
+#input_board = [
+    #["5","3",".",".","7",".",".",".","."],
+    #["6",".",".","1","9","5",".",".","."],
+    #[".","9","8",".",".",".",".","6","."],
+    #["8",".",".",".","6",".",".",".","3"],
+    #["4",".",".","8",".","3",".",".","1"],
+    #["7",".",".",".","2",".",".",".","6"],
+    #[".","6",".",".",".",".","2","8","."],
+   # #[".",".",".","4","1","9",".",".","5"],
+    #[".",".",".",".","8",".",".","7","9"]
+#]
+
+# Create an instance of the Solution class
+#solution = Solution()
+
+# Call the isValidSudoku function on the input board
+#result = solution.isValidSudoku(input_board)
+
+# Print the result
+#print(result)  # This should print True or False based on the validity of the input Sudoku board
+    
         
