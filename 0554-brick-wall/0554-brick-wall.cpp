@@ -38,3 +38,30 @@ public:
         return rows - maxGap;
     }
 };
+
+/*
+
+int main() {
+    Solution solution;
+    
+    // Create a 2D vector representing the wall
+    vector<vector<int>> wall = {
+        {1, 2, 2, 1},
+        {3, 1, 2},
+        {1, 3, 2},
+        {2, 4},
+        {3, 1, 2},
+        {1, 3, 1, 1}
+    };
+    
+    // Call the leastBricks function to find the minimum number of bricks to cross
+    int result = solution.leastBricks(wall);
+    
+    // Print the result
+    cout << "Minimum number of bricks to cross: " << result << endl;
+    
+    return 0;
+}
+*/
+
+
