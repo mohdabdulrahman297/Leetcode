@@ -1,32 +1,38 @@
-class Solution:
-    def leastBricks(self, wall: List[List[int]]) -> int:
+//Time complexity : O(n x m)
+//Space complexity: O(n x m)
+
+class Solution {
+public:
+    int leastBricks(vector<vector<int>>& wall) {
         
-        ## create a hashmap for counting gaps at every postion 
-        ## initialize it with 0,0
+        unordered_map<int , int> countGap;
         
-        countGap = {0:0}
+        int rows = wall.size();
+        int cols;
+        int maxGap = 0;
         
-        for r in wall:
-            total = 0
-            ## every brick position except the last because its mentioned in the question
-            for b in r[:-1]:
-                total+=b
-                countGap[total] = 1 + countGap.get(total,0)
+        for(int i=0;i<rows;i++){
+            int total = 0;
+            
+            // '-1' because edge of the wall is not considered
+            cols = wall[i].size() - 1;
+            
+            for(int j=0;j<cols;j++){
+                total += wall[i][j];
                 
-        return len(wall) - max(countGap.values())      
+                if(countGap.find(total) != countGap.end()){
+                    countGap[total]++;
+                }
+                else{
+                    countGap[total] = 1;
+                }
+                
+                maxGap = max(maxGap , countGap[total]);
+            }
+            
+            
+        }
+        return rows - maxGap;
         
-# Create an instance of the Solution class
-##solution = Solution()
-
-# Example wall
-##wall = [
-##    [1, 2, 2, 1],
-##    [3, 1, 2],
-##    [1, 3, 2],
-##    [2, 4],
-##    [3, 1, 2],
-##    [1, 3, 1, 1]
-##]
-
-##result = solution.leastBricks(wall)
-##print(result)  # Debug print to see the final result##        
+    }
+};
