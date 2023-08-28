@@ -16,3 +16,21 @@ public:
         
     }
 };
+
+/*
+
+int main() {
+    Solution solution;
+    
+    // Create a vector representing stock prices
+    vector<int> prices = {7, 1, 5, 3, 6, 4};
+    
+    // Call the maxProfit function to calculate the maximum profit
+    int result = solution.maxProfit(prices);
+    
+    // Print the result
+    cout << "Maximum profit: " << result << endl;
+    
+    return 0;
+}
+*/
