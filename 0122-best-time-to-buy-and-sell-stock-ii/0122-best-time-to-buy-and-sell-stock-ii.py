@@ -12,3 +12,15 @@ class Solution:
                 
         return profit        
         
+        
+# Test the maxProfit function
+#solution = Solution()
+
+# Create a list representing the stock prices
+#prices = [7, 1, 5, 3, 6, 4]
+
+# Call the maxProfit function to calculate the maximum profit
+#result = solution.maxProfit(prices)
+
+# Print the result
+#print("Maximum profit:", result)#        
