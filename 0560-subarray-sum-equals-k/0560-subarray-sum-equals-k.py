@@ -26,6 +26,19 @@ class Solution:
             dic[sum] = dic.get(sum,0) + 1
             
         return count    
+    
+    
+    
+# Create an instance of the Solution class
+#solution = Solution()
+
+# Input array and k value
+#nums = [1, 2, 3]
+#k = 3
+
+# Call the subarraySum function and print the result
+#result = solution.subarraySum(nums, k)
+#print(result)    
         
         
         
