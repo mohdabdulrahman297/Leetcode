@@ -20,3 +20,19 @@ public:
         return count;
     }
 };
+
+/*
+int main() {
+    Solution solution;
+    
+    // Input array and k value
+    vector<int> nums = {1, 2, 3};
+    int k = 3;
+    
+    // Call the subarraySum function and print the result
+    int result = solution.subarraySum(nums, k);
+    cout << result << endl;
+    
+    return 0;
+}
+*/
