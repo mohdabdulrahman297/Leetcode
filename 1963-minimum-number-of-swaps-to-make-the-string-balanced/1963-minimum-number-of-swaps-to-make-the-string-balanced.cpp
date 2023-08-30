@@ -21,3 +21,14 @@ public:
         
     }
 };
+
+/*
+
+int main() {
+    Solution solution;
+    std::string input_string = "[]][[]";
+    int result = solution.minSwaps(input_string);
+    std::cout << "Result: " << result << std::endl;
+    return 0;
+}
+*/
