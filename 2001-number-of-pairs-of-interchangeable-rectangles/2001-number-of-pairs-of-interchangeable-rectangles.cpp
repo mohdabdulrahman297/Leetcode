@@ -26,3 +26,19 @@ public:
         return res;  
     }
 };
+
+
+/*
+int main() {
+    Solution solution;
+
+    // Define the input rectangles
+    vector<vector<int>> rectangles = {{4, 8}, {3, 6}, {10, 20}, {15, 30}};
+
+    // Call the interchangeableRectangles method with the input and print the result
+    long long result = solution.interchangeableRectangles(rectangles);
+    cout << result << endl;
+
+    return 0;
+}
+*/
