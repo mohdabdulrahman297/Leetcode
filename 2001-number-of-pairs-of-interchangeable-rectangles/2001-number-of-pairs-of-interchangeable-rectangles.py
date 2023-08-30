@@ -22,3 +22,7 @@ class Solution:
             
         return res    
         
+        
+#solution = Solution()
+#result = solution.interchangeableRectangles(rectangles)
+#print(result)#        
