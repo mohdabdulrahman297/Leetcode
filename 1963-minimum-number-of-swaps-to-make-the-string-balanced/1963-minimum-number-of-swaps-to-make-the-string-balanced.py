@@ -20,3 +20,10 @@ class Solution:
             
         return (maxClose + 1)//2    
         
+        
+# Example usage
+#if __name__ == "__main__":
+    #solution = Solution()
+    #input_string = "[]][[]"
+    #result = solution.minSwaps(input_string)
+    #print("Result:", result)#        
