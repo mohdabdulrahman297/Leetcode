@@ -32,3 +32,13 @@ class Solution:
                     res = max(res , pali[m1] * pali[m2])
         return res         
                 
+        
+# Create an instance of the Solution class
+#solution = Solution()
+
+# Define the input string
+#input_string = "ababbb"
+
+# Call the maxProduct method with the input and print the result
+#result = solution.maxProduct(input_string)
+#print(result)#        
