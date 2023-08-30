@@ -25,7 +25,15 @@ class Solution:
             count += len(set(s[first+1:last]))
             
             
-        return count      
+        return count     
+    
+    
+# Example usage
+#if __name__ == "__main__":
+    #solution = Solution()
+    #input_string = "aabca"
+    #result = solution.countPalindromicSubsequence(input_string)
+    #print("Result:", result)  
                          
                          
         
