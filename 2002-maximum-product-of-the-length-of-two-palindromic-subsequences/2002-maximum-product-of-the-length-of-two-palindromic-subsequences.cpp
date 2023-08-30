@@ -30,3 +30,19 @@ public:
         return res;
     }
 };
+
+
+/*
+int main() {
+    Solution solution;
+
+    // Define the input string
+    string input_string = "ababbb";
+
+    // Call the maxProduct method with the input and print the result
+    int result = solution.maxProduct(input_string);
+    cout << result << endl;
+
+    return 0;
+}
+*/
