@@ -26,3 +26,13 @@ public:
         
     }
 };
+
+/*
+int main() {
+    Solution solution;
+    std::string input_string = "aabca";
+    int result = solution.countPalindromicSubsequence(input_string);
+    std::cout << "Result: " << result << std::endl;
+    return 0;
+}
+*/
