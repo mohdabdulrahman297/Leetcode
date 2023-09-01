@@ -31,3 +31,17 @@ public:
         
     }
 };
+
+/*
+int main() {
+    Solution solution;
+
+    vector<int> heights = {0,1,0,2,1,0,1,3,2,1,2,1};
+
+    int result = solution.trap(heights);
+
+    cout << "Trapped water units: " << result << endl;
+
+    return 0;
+}
+*/
