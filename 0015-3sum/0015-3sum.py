@@ -40,4 +40,12 @@ class Solution:
                     while l<r and nums[l] == nums[l-1]:
                         l+=1
                         
-        return res           
+        return res 
+    
+    
+# Test the threeSum function
+#solution = Solution()
+
+#nums1 = [-1, 0, 1, 2, -1, -4]
+#result1 = solution.threeSum(nums1)
+#print(result1) #    
