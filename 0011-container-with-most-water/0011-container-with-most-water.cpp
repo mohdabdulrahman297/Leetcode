@@ -21,3 +21,17 @@ public:
         return result;
     }
 };
+
+/*
+int main() {
+    Solution solution;
+
+    vector<int> heights = {1, 8, 6, 2, 5, 4, 8, 3, 7};
+
+    int result = solution.maxArea(heights);
+
+    cout << "Maximum area: " << result << endl;
+
+    return 0;
+}
+*/
