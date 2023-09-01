@@ -28,3 +28,16 @@ public:
         
     }
 };
+
+/*
+int main() {
+    Solution solution;
+
+    std::vector<int> numbers1 = {2, 7, 11, 15};
+    int target1 = 9;
+    std::vector<int> result1 = solution.twoSum(numbers1, target1);
+    for (int num : result1) {
+        std::cout << num << " ";
+    }
+    std::cout << std::endl; 
+    */
