@@ -27,3 +27,16 @@ class Solution:
             res = max(res, r - l + 1)
                 
         return res
+    
+# Create an instance of the Solution class
+##solution = Solution()
+
+# Define an input string
+##input_str = "abcabcbb"
+
+# Call the lengthOfLongestSubstring function with the input string
+##result = solution.lengthOfLongestSubstring(input_str)
+
+# Print the result
+##print("Length of the longest substring without repeating ##characters:", result)
+##    
