@@ -20,5 +20,19 @@ class Solution:
                 l=r
             r+=1    
             
-        return maxProfit    
+        return maxProfit   
+    
+    
+    
+# Create an instance of the Solution class
+##solution = Solution()
+
+# Define an input list of stock prices
+##prices = [7, 1, 5, 3, 6, 4]
+
+# Call the maxProfit function with the input list
+##result = solution.maxProfit(prices)
+
+# Print the result
+#print("Maximum profit:", result)##    
         
