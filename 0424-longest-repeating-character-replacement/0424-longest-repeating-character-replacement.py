@@ -22,3 +22,18 @@ class Solution:
                 
         # The result is the length of the valid window
         return r - l+1
+    
+    
+# Create an instance of the Solution class
+#solution = Solution()
+
+# Define an input string and maximum replacement count
+#input_str = "ABAB"
+#k = 2
+
+# Call the characterReplacement function with the input string and k
+#result = solution.characterReplacement(input_str, k)
+
+# Print the result
+#print("Length of the longest substring with at most", k, #"replacements:", result)
+    
