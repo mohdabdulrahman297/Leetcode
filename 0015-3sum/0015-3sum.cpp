@@ -39,3 +39,20 @@ public:
         
     }
 };
+
+/*
+int main() {
+    Solution solution;
+
+    std::vector<int> nums1 = {-1, 0, 1, 2, -1, -4};
+    std::vector<std::vector<int>> result1 = solution.threeSum(nums1);
+    for (const auto& triplet : result1) {
+        for (int num : triplet) {
+            std::cout << num << " ";
+        }
+        std::cout << std::endl;
+    }
+
+    return 0;
+}
+*/
