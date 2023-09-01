@@ -19,3 +19,18 @@ public:
         return r - l; // Corrected to r - l instead of r - l + 1
     }
 };
+
+/*
+int main() {
+    Solution solution;
+
+    string input_str = "ABAB";
+    int k = 2;
+
+    int result = solution.characterReplacement(input_str, k);
+
+    cout << "Length of the longest substring with at most " << k << " replacements: " << result << endl;
+
+    return 0;
+}
+*/
