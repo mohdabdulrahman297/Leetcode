@@ -23,5 +23,15 @@ class Solution:
             else:
                 return [l+1 , r+1]
             
-        return []   
+        return []  
+    
+    
+# Create an instance of the Solution class
+#solution = Solution()
+
+# Test cases
+#numbers1 = [2, 7, 11, 15]
+#target1 = 9
+#result1 = solution.twoSum(numbers1, target1)
+#print(result1)  # Should print [1, 2]#    
         
