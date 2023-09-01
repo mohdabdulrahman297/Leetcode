@@ -21,3 +21,16 @@ class Solution:
                 res += rightMax - height[r]
                 
         return res
+    
+    
+ # Create an instance of the Solution class
+#solution = Solution()
+
+# Define an input list of heights
+#heights = [0,1,0,2,1,0,1,3,2,1,2,1]
+
+# Call the trap function with the input list
+#result = solution.trap(heights)
+
+# Print the result
+#print("Trapped water units:", result)#   
