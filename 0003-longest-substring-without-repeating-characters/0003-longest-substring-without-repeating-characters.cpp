@@ -21,3 +21,17 @@ public:
         
     }
 };
+
+/*
+int main() {
+    Solution solution;
+
+    string input_str = "abcabcbb";
+
+    int result = solution.lengthOfLongestSubstring(input_str);
+
+    cout << "Length of the longest substring without repeating characters: " << result << endl;
+
+    return 0;
+}
+*/
