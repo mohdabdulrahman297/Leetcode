@@ -59,3 +59,12 @@ class Solution:
         return matches == 26    
             
         
+        
+# Create an instance of the Solution class
+##solution = Solution()
+
+# Test cases
+##s1 = "ab"
+##s2 = "eidbaooo"
+##result = solution.checkInclusion(s1, s2)
+##print(f"Is '{s1}' a permutation of a substring of '{s2}'? ##{result}")  # Should print True##        
