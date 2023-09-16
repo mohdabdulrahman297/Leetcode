@@ -51,3 +51,12 @@ class Solution:
             return s[l : r + 1]
         else:
             return ""
+        
+# Create an instance of the Solution class
+##solution = Solution()
+##
+# Test cases
+##s1 = "ADOBECODEBANC"
+##t1 = "ABC"
+##result1 = solution.minWindow(s1, t1)
+##print("Test Case 1:", result1)  # Output should ##be "BANC"##        
