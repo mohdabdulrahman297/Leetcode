@@ -42,3 +42,13 @@ class Solution:
             
         return output     
         
+        
+# Create an instance of the Solution class
+##solution = Solution()
+
+# Test cases
+##nums = [1, 3, -1, -3, 5, 3, 6, 7]
+##k = 3
+
+##result = solution.maxSlidingWindow(nums, k)
+##print(result)  # You should ##print the result to see the maximum ##v##alues in each sliding window        
