@@ -32,3 +32,20 @@ public:
         
     }
 };
+
+/*
+int main() {
+    Solution solution;
+    std::vector<int> nums = {1, 3, -1, -3, 5, 3, 6, 7};
+    int k = 3;
+    
+    std::vector<int> result = solution.maxSlidingWindow(nums, k);
+    
+    for (int num : result) {
+        std::cout << num << " ";
+    }
+    std::cout << std::endl;
+    
+    return 0;
+}
+*/
