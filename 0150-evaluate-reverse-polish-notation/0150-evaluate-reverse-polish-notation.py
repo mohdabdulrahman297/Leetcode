@@ -36,3 +36,17 @@ class Solution:
         ## the element that is left in the stack
         return stack[0]         
         
+        
+        
+# Create an instance of the Solution class
+##solution = Solution()
+
+# Test case (RPN expression as tokens)
+##tokens = ["3", "4", "+", "2", "*", "7", "/"]  # Equivalent to (3 + ##4) * 2 / 7
+
+# Evaluate the RPN expression
+##result = solution.evalRPN(tokens)
+
+# Print the result
+##print("Result:", result)  # Should print the result of the ##expression
+##        
