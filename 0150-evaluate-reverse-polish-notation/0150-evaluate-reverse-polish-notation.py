@@ -1,52 +1,49 @@
-## space: o(n)
-## time: o(n)
+class Solution {
+public:
+    int evalRPN(vector<string>& tokens) {
+        stack<int> stk;
+        
+        for (int i = 0; i < tokens.size(); i++) {
+            string token = tokens[i];
+            
+            if (token.size() > 1 || isdigit(token[0])) {
+                stk.push(stoi(token));
+                continue;
+            }
+            
+            int num2 = stk.top();
+            stk.pop();
+            int num1 = stk.top();
+            stk.pop();
+            
+            int result = 0;
+            if (token == "+") {
+                result = num1 + num2;
+            } else if (token == "-") {
+                result = num1 - num2;
+            } else if (token == "*") {
+                result = num1 * num2;
+            } else {
+                result = num1 / num2;
+            }
+            stk.push(result);
+        }
+        
+        return stk.top();
+    }
+};
 
-class Solution:
-    def evalRPN(self, tokens: List[str]) -> int:
-        
-        ##create an empty stack
-        stack = []
-        
-        ## for different arthmetic operators apply the logic
-        
-        for c in tokens:
-            if c == "+":
-                ## pop those two values before the operator , apply the operation between them and add the result to the stack
-                
-                stack.append(stack.pop() +  stack.pop())
-                
-            elif c == "-":
-                ## b-a gives positive values whereas a-b gives negative
-                a,b = stack.pop(), stack.pop()
-                stack.append(b-a)
-                
-            elif c == "*":
-                
-                stack.append(stack.pop() * stack.pop())
-                
-            elif c ==  "/":
-                a,b = stack.pop(), stack.pop()
-                ##int() rounds off the number
-                stack.append(int(b/a))
-                
-            else:
-                ## first convert string into int and then append 
-                stack.append(int(c))
-        
-        ## the element that is left in the stack
-        return stack[0]         
-        
-        
-        
-# Create an instance of the Solution class
-##solution = Solution()
+/*
+int main() {
+    Solution solution;
+    
+    // Test case: Evaluate the RPN expression "3 4 + 2 *"
+    std::vector<std::string> tokens = {"3", "4", "+", "2", "*"};
+    int result = solution.evalRPN(tokens);
+    
+    std::cout << "Result: " << result << std::endl;  // Should print the result
 
-# Test case (RPN expression as tokens)
-##tokens = ["3", "4", "+", "2", "*", "7", "/"]  # Equivalent to (3 + ##4) * 2 / 7
+    return 0;
+}
+*/
 
-# Evaluate the RPN expression
-##result = solution.evalRPN(tokens)
-
-# Print the result
-##print("Result:", result)  # Should print the result of the ##expression
-##        
