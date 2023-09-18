@@ -32,4 +32,14 @@ class Solution:
         else:
             return False
             
-        
+  # Create an instance of the Solution class
+##solution = Solution()
+
+# Test cases
+##input_str1 = "()"
+##input_str2 = "({[()]})"
+
+# Check if the input strings have valid brackets
+##print(solution.isValid(input_str1))  # Should print True
+##print(solution.isValid(input_str2))  # Should print True
+##      
