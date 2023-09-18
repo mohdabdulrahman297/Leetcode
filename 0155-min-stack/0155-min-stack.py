@@ -1,52 +1,42 @@
-## time: o(1)
-## space: o(n)
+#include <iostream>
+#include <stack>
 
-class MinStack:
+class MinStack {
+public:
+    std::stack<int> stack; // Regular stack
+    std::stack<int> minStack; // Stack to keep track of the minimum value
 
-    def __init__(self):
-        
-        ##create two stack one for regular and another for minvalue
-        self.stack = []
-        self.minStack = []
-        
+    void push(int val) {
+        // Append values into the stack
+        stack.push(val);
 
-    def push(self, val: int) -> None:
-        ## append values into stack
-        self.stack.append(val)
-        
-        ## check min values from the top of the stack and the input value
-        
-        ## non empty then proceed
-        if(self.minStack):
-            val = min(val, self.minStack[-1])
-            
-        else:
-            val = min(val, val)
-            
-        self.minStack.append(val)
-        
+        // Check minimum values from the top of the minStack and the input value
+        if (!minStack.empty()) {
+            val = std::min(val, minStack.top());
+        }
 
-    def pop(self) -> None:
-        
-        self.stack.pop()
-        self.minStack.pop()
-        
-        
+        minStack.push(val);
+    }
 
-    def top(self) -> int:
-        
-        return self.stack[-1]
-        
+    void pop() {
+        if (!stack.empty()) {
+            stack.pop();
+            minStack.pop();
+        }
+    }
 
-    def getMin(self) -> int:
-        
-        return self.minStack[-1]
-        
+    int top() {
+        if (!stack.empty()) {
+            return stack.top();
+        }
+        return -1; // Handle the case when the stack is empty
+    }
 
+    int getMin() {
+        if (!minStack.empty()) {
+            return minStack.top();
+        }
+        return -1; // Handle the case when there is no minimum value
+    }
+};
 
-# Your MinStack object will be instantiated and called as such:
-# obj = MinStack()
-# obj.push(val)
-# obj.pop()
-# param_3 = obj.top()
-# param_4 = obj.getMin()
