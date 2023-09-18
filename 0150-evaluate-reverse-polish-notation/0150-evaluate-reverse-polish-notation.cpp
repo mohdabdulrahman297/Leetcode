@@ -33,3 +33,17 @@ public:
     }
 };
 
+/*
+int main() {
+    Solution solution;
+    
+    // Test case: Evaluate the RPN expression "3 4 + 2 *"
+    std::vector<std::string> tokens = {"3", "4", "+", "2", "*"};
+    int result = solution.evalRPN(tokens);
+    
+    std::cout << "Result: " << result << std::endl;  // Should print the result
+
+    return 0;
+}
+*/
+
