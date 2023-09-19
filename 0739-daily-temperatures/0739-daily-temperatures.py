@@ -33,3 +33,13 @@ class Solution:
         return res         
                 
         
+# Create an instance of the Solution class
+##solution_instance = Solution()
+
+# Test the dailyTemperatures method with a specific list of ##temperatures
+##temperatures = [73, 74, 75, 71, 69, 72, 76, 73]  # You can change ##this list to test with different temperatures
+##result = solution_instance.dailyTemperatures(temperatures)
+
+# Print the result, which contains the number of days to wait for a warmer temperature
+##print(result)##        
+        
