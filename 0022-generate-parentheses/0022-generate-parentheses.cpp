@@ -29,3 +29,18 @@ private:
         }
     }
 };
+
+/*
+int main() {
+    Solution solution;
+    int n = 3; // You can change this value to test with different n
+    vector<string> result = solution.generateParenthesis(n);
+
+    // Print the generated parenthesis combinations
+    for (const string& combination : result) {
+        cout << combination << endl;
+    }
+
+    return 0;
+}
+*/
