@@ -44,5 +44,17 @@ class Solution:
         ## initialize the backtrack function with open and closose count as 0, 0
         backtrack(0, 0)
         return res
+    
+    
+# Create an instance of the Solution class
+##solution_instance = Solution()
+
+# Test the generateParenthesis method with a specific value of n
+##n = 3  # You can change this value to test with different n
+##result = solution_instance.generateParenthesis(n)
+
+# Print the generated parenthesis combinations
+##for combination in result:
+    ##print(combination)##    
                 
         
