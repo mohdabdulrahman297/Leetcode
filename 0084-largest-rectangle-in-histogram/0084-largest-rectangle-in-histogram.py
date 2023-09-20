@@ -1,51 +1,54 @@
-## time: o(n)
-## space : o(n)
+// space:o(n)
+// time:o(n)
 
-class Solution:
-    def largestRectangleArea(self, heights: List[int]) -> int:
+class Solution {
+public:
+    int largestRectangleArea(vector<int>& heights) {
+        // pair: [index, height]
+        stack<pair<int, int>> stk;
+        int result = 0;
         
-        ## initialize maxarea as '0'
-        maxArea = 0
-        
-        ## a stack with pair : (index:height)
-        stack = []
-        
-        ## interate for both index and height in input array
-        
-        for i, h in enumerate(heights):
+        for (int i = 0; i < heights.size(); i++) {
+            int start = i;
             
-            ## let the start be i(initially)
-            
-            start = i
-            
-            ## when stack not empty and stack top value is greater than height
-            
-            while stack and stack[-1][1] > h:
-                ## pop and store in index, height
-                index, height = stack.pop()
-                ## area is height * width where width is i-index
-                maxArea = max(maxArea, height * (i-index))
-                ##update start
-                start = index
+            while (!stk.empty() && stk.top().second > heights[i]) {
+                int index = stk.top().first;
+                int width = i - index;
+                int height = stk.top().second;
+                stk.pop();
                 
-            stack.append((start, h))
+                result = max(result, height * width);
+                start = index;
+            }
             
-        ## now check for the values left in the stack
-        for i, h in stack:
-            
-            maxArea = max(maxArea, h * (len(heights) - i))
-            
-        return maxArea   
+            stk.push({start, heights[i]});
+        }
         
-                
-# Create an instance of the Solution class
-##solution = Solution()
+        while (!stk.empty()) {
+            int width = heights.size() - stk.top().first;
+            int height = stk.top().second;
+            stk.pop();
+            
+            result = max(result, height * width);
+        }
+                          
+        return result;
+    }
+};
 
-# Define the input values (list of heights)
-##heights = [2, 1, 5, 6, 2, 3]  # Example input
+/*
+int main() {
+    Solution solution;
 
-# Call the largestRectangleArea function with the provided input
-##result = solution.largestRectangleArea(heights)
+    // Define the input values (list of heights)
+    vector<int> heights = {2, 1, 5, 6, 2, 3};  // Example input
 
-# Print the result
-##print("Largest rectangle area:", result)##        
+    // Call the largestRectangleArea function with the provided input
+    int result = solution.largestRectangleArea(heights);
+
+    // Print the result
+    cout << "Largest rectangle area: " << result << endl;
+
+    return 0;
+}
+*/
