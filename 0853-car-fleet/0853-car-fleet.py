@@ -24,4 +24,24 @@ class Solution:
             if(len(stack) >= 2 and stack[-1] <= stack[-2]):
                 stack.pop()
                 
-        return len(stack)       
+        return len(stack) 
+    
+    
+    
+# Import List from typing module
+## from typing import List
+
+# Define the input values
+## target = 12  # Target position
+## position = [10, 8, 0, 5, 3]  # List of positions of cars
+## speed = [2, 4, 1, 1, 3]  # List of speeds of cars
+
+# Create an instance of the Solution class
+## solution = Solution()
+
+# Call the carFleet function with the provided input
+## result = solution.carFleet(target, position, speed)
+
+# Print the result
+## print("Number of car fleets:", result)
+##     
