@@ -38,4 +38,14 @@ class Solution:
         return maxArea   
         
                 
-        
+# Create an instance of the Solution class
+##solution = Solution()
+
+# Define the input values (list of heights)
+##heights = [2, 1, 5, 6, 2, 3]  # Example input
+
+# Call the largestRectangleArea function with the provided input
+##result = solution.largestRectangleArea(heights)
+
+# Print the result
+##print("Largest rectangle area:", result)##        
