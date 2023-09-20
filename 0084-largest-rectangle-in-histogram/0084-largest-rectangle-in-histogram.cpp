@@ -35,3 +35,20 @@ public:
         return result;
     }
 };
+
+/*
+int main() {
+    Solution solution;
+
+    // Define the input values (list of heights)
+    vector<int> heights = {2, 1, 5, 6, 2, 3};  // Example input
+
+    // Call the largestRectangleArea function with the provided input
+    int result = solution.largestRectangleArea(heights);
+
+    // Print the result
+    cout << "Largest rectangle area: " << result << endl;
+
+    return 0;
+}
+*/
