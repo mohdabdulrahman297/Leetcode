@@ -28,5 +28,22 @@ class Solution:
                 else:
                     l = m+1
                     
-        return -1           
+        return -1    
+    
+    
+# Create an instance of the Solution class
+#sol = Solution()
+
+# Example test cases
+#nums = [4, 5, 6, 7, 0, 1, 2]
+#target1 = 0
+#target2 = 3
+
+# Call the search method to search for the targets
+#result1 = sol.search(nums, target1)
+#result2 = sol.search(nums, target2)
+
+# Print the results
+#print(f"Result for target1 ({target1}): {result1}")
+#print(f"Result for target2 ({target2}): {result2}")    
         
