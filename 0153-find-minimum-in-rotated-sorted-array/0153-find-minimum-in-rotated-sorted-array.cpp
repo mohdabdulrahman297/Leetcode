@@ -33,3 +33,17 @@ public:
         return res;
     }
 };
+
+/*
+int main() {
+    Solution solution;
+
+    vector<int> nums = {4, 5, 6, 7, 0, 1, 2};
+
+    int result = solution.findMin(nums);
+
+    cout << "Minimum element in the rotated and sorted array: " << result << endl;
+
+    return 0;
+}
+*/
