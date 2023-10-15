@@ -32,3 +32,22 @@ public:
         return -1;
     }
 };
+
+/*
+int main() {
+    Solution sol;
+
+    std::vector<int> nums = {4, 5, 6, 7, 0, 1, 2};
+    int target1 = 0;
+    int target2 = 3;
+
+    int result1 = sol.search(nums, target1);
+    int result2 = sol.search(nums, target2);
+
+    // Print the results
+    printf("Result for target1 (%d): %d\n", target1, result1);
+    printf("Result for target2 (%d): %d\n", target2, result2);
+
+    return 0;
+}
+*/
