@@ -25,6 +25,20 @@ class Solution:
             else:
                 # search in the left part
                 r = m-1
-        return res         
+        return res   
+    
+    
+# Define the input data
+#nums = [4, 5, 6, 7, 0, 1, 2]
+
+# Create an instance of the Solution class
+#solution = Solution()
+
+# Call the findMin function
+#result = solution.findMin(nums)
+
+# Print the result
+#print("Minimum element in the rotated and sorted array:", result)
+    
                 
                 
