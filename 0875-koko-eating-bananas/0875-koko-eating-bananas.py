@@ -2,18 +2,25 @@
 ## time: o(nlogm)
 class Solution:
     def minEatingSpeed(self, piles: List[int], h: int) -> int:
+        # Initialize the pointers
         l, r = 1, max(piles)
+        # Let the result be max in the beginning
         res = r
-
+        # Apply binary search
         while l <= r:
+            # Calculate the mid
             k = (l + r) // 2
-
-            totalTime = 0
+            # Initialize hours to zero
+            hours = 0
+            # Iterate through the array
             for p in piles:
-                totalTime += math.ceil(float(p) / k)
-            if totalTime <= h:
+                # Calculate the hours and round off using math.ceil function
+                hours += math.ceil(float(p) / k)
+            if hours <= h:
+                # Update the result and check if there exists another min value than the previous one
                 res = k
                 r = k - 1
             else:
                 l = k + 1
+        # Return the result
         return res
