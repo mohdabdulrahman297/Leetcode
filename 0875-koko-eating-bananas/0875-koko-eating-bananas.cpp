@@ -32,3 +32,18 @@ public:
         return result;
     }
 };
+
+/*
+int main() {
+    Solution solution;
+
+    vector<int> piles = {3, 6, 7, 11};
+    int h = 8;
+
+    int result = solution.minEatingSpeed(piles, h);
+
+    cout << "Minimum Eating Speed: " << result << endl;
+
+    return 0;
+}
+*/
