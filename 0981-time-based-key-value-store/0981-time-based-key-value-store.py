@@ -44,3 +44,15 @@ class TimeMap:
 # obj = TimeMap()
 # obj.set(key,value,timestamp)
 # param_2 = obj.get(key,timestamp)
+
+# Create an instance of the TimeMap class
+#time_map = TimeMap()
+
+# Set a temperature value for New York at a specific timestamp
+#time_map.set("NewYork", "68°F", 100)
+
+# Get the temperature value for New York at a specific timestamp
+#result = time_map.get("NewYork", 150)
+
+# Print the result
+#print(f"Result for timestamp 150: {result}")
