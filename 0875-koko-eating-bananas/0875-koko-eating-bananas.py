@@ -24,3 +24,21 @@ class Solution:
                 l = k + 1
         # Return the result
         return res
+    
+    
+# Import the required libraries
+#import math
+
+# Define the input data
+#piles = [3, 6, 7, 11]
+#h = 8
+
+# Create an instance of the Solution class
+#solution = Solution()
+
+# Call the minEatingSpeed function
+#result = solution.minEatingSpeed(piles, h)
+
+# Print the result
+#print("Minimum Eating Speed:", result)
+    
