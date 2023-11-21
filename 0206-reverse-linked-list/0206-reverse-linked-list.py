@@ -15,7 +15,9 @@ class Solution:
         
         while curr:
             temp = curr.next
+            ## now this indicates the last element in the list 
             curr.next = prev
+            ## shifitng the pointers forward
             prev = curr
             curr = temp
             
