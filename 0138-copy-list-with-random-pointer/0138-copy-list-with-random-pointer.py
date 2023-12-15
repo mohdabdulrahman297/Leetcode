@@ -7,6 +7,9 @@ class Node:
         self.random = random
 """
 
+## space : o(n)
+## time : o(n)
+
 class Solution:
     def copyRandomList(self, head: 'Optional[Node]') -> 'Optional[Node]':
         ## a hashmap with null pointing to null for mapping old node to the copy of that node
