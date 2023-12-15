@@ -12,6 +12,8 @@ public:
         random = NULL;
     }
 };
+Time: O(n)
+Space: O(n)
 */
 
 class Solution {
