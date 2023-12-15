@@ -7,6 +7,8 @@
  *     ListNode(int x) : val(x), next(nullptr) {}
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
+    Time: O(n)
+    Space: O(1)
  */
 class Solution {
 public:
