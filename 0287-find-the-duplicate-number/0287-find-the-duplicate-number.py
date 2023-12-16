@@ -2,7 +2,7 @@ class Solution:
     def findDuplicate(self, nums: List[int]) -> int:
         ## pointers that start with 0
         slow, fast = 0, 0
-        ## iterate 
+        ## iterate to detect loop in array
         while True:
             slow = nums[slow]
             fast = nums[nums[fast]]
@@ -10,7 +10,7 @@ class Solution:
             if slow == fast:
                 break
                 
-        ## another pointer
+        ## another pointer to find entry point of the cycle
         slow2 = 0
         while True:
             slow = nums[slow]
