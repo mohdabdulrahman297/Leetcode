@@ -14,22 +14,42 @@ Space: O(n)
 class Solution {
 public:
     bool isValidBST(TreeNode* root) {
-        return valid(root, numeric_limits<long>::min(), numeric_limits<long>::max());
+      return valid(root, numeric_limits<long>::min(), numeric_limits<long>::max());  
     }
-
+    
 private:
-    bool valid(TreeNode* node, long left, long right) {
-        if (!node) {
+    bool valid(TreeNode* node, long left, long right){
+        if(!node){
             return true;
         }
-
-        // Basic valid tree checking
-        if (!(node->val < right && node->val > left)) {
+        
+        if(!(node->val < right && node->val > left)){
             return false;
         }
-
-        // Recursive call for left and right
-        // Since we're moving to the left, make the right node as the main node to make the algorithm work properly, similarly for the right as well
-        return valid(node->left, left, node->val) && valid(node->right, node->val, right);
+        
+        return valid(node->left, left, node->val) & valid(node->right, node->val, right);
     }
 };
+
+
+/*
+int main() {
+    // Example usage
+    TreeNode* root = new TreeNode(2);
+    root->left = new TreeNode(1);
+    root->right = new TreeNode(3);
+
+    Solution solution;
+    bool result = solution.isValidBST(root);
+
+    // Display the result
+    cout << "Is Valid BST: " << (result ? "true" : "false") << endl;
+
+    // Remember to free the allocated memory
+    delete root->left;
+    delete root->right;
+    delete root;
+
+    return 0;
+}
+*/
